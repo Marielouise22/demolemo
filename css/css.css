@@ -1,0 +1,113 @@
+/**
+ * file: css/css.css
+ * purpose: styling
+ **/
+
+/* Remove whitespace on top of certain browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+}
+
+/* Define variables in the :root */
+ 
+
+/* Use your variables on elements along these lines */
+/*
+:root {
+  --contrast: lime;
+  --backgr: #000;
+}
+
+--- You can use the variables like this ---
+
+ main {
+   color: var(--contrast);
+   background-color: var(--backgr);
+ }
+*/
+
+h1 {
+  color: rgb(29, 14, 14);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  color: rgb(127, 81, 13);
+}
+
+p {
+  color: rgb(121, 81, 37);
+}
+
+/* billeder i 100% */
+img {
+  width: 100%;
+}
+
+.flex {
+  display: flex; 
+}
+
+#topNav {
+  background-color: rgb(8, 7, 7);
+  color:#fff; 
+}
+
+#topNav a { 
+  color:aquamarine; 
+
+}
+#topNav a:hover {
+  color: blueviolet;
+}
+
+/* hero sektionen styles */
+header {
+  height: 100vh;
+  background-color: coral;
+
+
+  background-image: url('../images/hero.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  /* læg teksten i midten */
+display: flex; 
+justify-content: center; 
+align-items: center; 
+
+}
+
+
+
+
+
+
+/* RESPONSIVT DESIGN*/ 
+/*modile enheder*/
+@media (max-width:600px){
+  body {
+    background-color: aquamarine;
+  }
+  #stemning {
+    display:block;
+  }
+}
+
+/*tablets,ipad &c.*/ 
+@media (min-width:601px) and (max-width:1024px) {
+    body {
+    background-color: rgb(219, 110, 181);
+  }
+  #stemning {
+    display:block;
+  }
+}
